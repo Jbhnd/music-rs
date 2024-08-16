@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+}
+
+#root {
+  text-align: center;
+  
+  background-image: url('../images/des.jpg');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  color: hsl(0, 0%, 100%);
+  min-height: 100vh;
+}
+/*myStylesStart*/
+/*input {
+  
+}
+
+*/
+.header {
+  background-color: hsla(260, 100%, 10%, 0.85);
+}
+
+.header > h1 {
+  padding: 0.5% 0;
+}
+
+.main {
+  padding: 0 0 5%;
+}
+
+.footer {
+  background-color: hsla(0, 100%, 3%, 1);
+}
+
+.footer-list {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2% 4%;
+  gap: 1rem 2rem;
+  font-size: 0.9rem;
+}
+
+.footer-list * {
+  align-self: center;
+  margin-left: 1rem;
+  flex: 1 1 1px;
+}
+
+.searchBar {
+  padding: 5% 0 3%;
+}
+
+.searchBar *{
+  display: block;
+  margin: 2% auto;
+}
+
+.searchBar > input {
+  line-height: 1.3;
+  min-width: 180px;
+  width: 22vw;
+  outline-color: hsla(260, 100%, 30%, 1);
+  font-size: 1rem;
+}
+
+button {
+  background-color: hsla(270, 100%, 30%, 1);
+  border-radius: 10px;
+  border-style: none;
+  line-height: 1.5rem;
+  color: inherit;
+  padding: 2px 10px;
+  font-size: .9rem;
+  margin: 7% 0 2%;
+}
+
+.results_Playlist {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1% 2% 2%;
+  column-gap: 6%;
+  row-gap: 1.5rem;
+  align-items: start;
+}
+
+.results, .playlist{
+  /*margin: 0 3% 0;*/
+  flex: 1 1 130px;
+  background-color: hsla(260, 100%, 9%, 0.85);
+  border-width: 0px 4px;
+  border-style: solid;
+  border-color: hsla(260, 100%, 2%, 0.8);
+  padding: 2% 3%;
+}
+
+.results {
+  min-height: 60vh;
+  align-self: stretch;
+}
+
+.results > .heading, .playlist > .heading {
+  border: none;
+  border-bottom: 1.5px solid rgba(255, 255, 255, 0.2);
+  outline: none;
+  font-weight: bold;
+  font-size: 1.4rem;
+  display: block;
+  margin: 0 0 9%;
+  text-align: left;
+  padding: 0 0 1%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  line-height: 1.7rem;
+  color: inherit;
+}
+
+.results > .heading {
+  border: none;
+  border-bottom: hidden;
+}
+
+.playlist > .heading:focus {
+  border-bottom: 1.5px solid hsla(260, 100%, 2%, 0.8);
+}
+
+.track{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid hsla(0, 0%, 100%, 0.2);
+}
+
+.track .artist_album {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.track_button {
+  border: none;
+  background-color: inherit;
+  box-sizing: content-box;
+  width: 1rem;
+  font-size: 1.5rem;
+  color: inherit;
+}
+
+/*.trackBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}*/
+
+/*.trackSection {
+  flex-grow: 1;
+}*/
+/*myStylesEnd*/
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
