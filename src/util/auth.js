@@ -1,5 +1,5 @@
 const clientId = 'cfd6106d557f45cea680b08941bd531c'
-const redirectUri = 'https://jbhnd.github.io/music-ap1/'
+const redirectUri = 'https://jbhnd.github.io/music-rs/'
 const responseType = 'token'
 const scope = 'playlist-modify-private'
 const showDialog = true
