@@ -13,9 +13,7 @@
   color: hsl(0, 0%, 100%);
   min-height: 100vh;
   display: flex;
-  border: 1px solid red;
   flex-direction: column;
-  
 }
 /*StylesStart*/
 /*input {
