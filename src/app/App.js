@@ -49,22 +49,22 @@ function App() {
   return (
     <>
       <header className='header'>
-        <h1>Music App</h1>
+        <h1>Music Rs</h1>
       </header>
       <main className='main'>
         <search>
           <SearchBar onSearch={searchTrack} />
         </search>
-        <section className='results_Playlist'>
+        <section className='results-Playlist'>
           <SearchResults results={searchResults} onAdd={searchAddHandler} />
           <Playlist playlistTracks={playlistTracks} onRemove={playlistRemoveHandler} onSave={savePlaylist} />
         </section>
       </main>
       <footer className='footer'>
         <ul className='footer-list'>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Community</li>
         </ul>
       </footer>
     </>

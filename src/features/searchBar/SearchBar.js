@@ -18,7 +18,7 @@ function SearchBar({onSearch}) {
     return (
         <form className='searchBar'>
             <input type='text' value={searchInput} onChange={handleSearchInput} />
-            <button onClick={handleSearch}>Sea</button>
+            <button onClick={handleSearch} className='button'>Search</button>
         </form>
     )
 }

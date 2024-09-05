@@ -20,7 +20,7 @@ function Playlist({playlistTracks, onRemove, onSave}) {
         <form className='playlist' onSubmit={handleSave} >
             <input className='heading' type='text' placeholder='Playlist Name' value={playlistName} onChange={handleUserInput} required />
             <Tracklist tracks={playlistTracks} onRemove={onRemove} buttonText={'-'} />
-            <button type='submit'>Save To Spotify</button>
+            <button type='submit' className='button'>Save To Spotify</button>
             {/*playlistTracks.map((result) => (
                 <div className='trackBox'>
                     <Track track={result} />
