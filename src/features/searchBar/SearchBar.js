@@ -16,9 +16,9 @@ function SearchBar({onSearch}) {
     }
     
     return (
-        <form className='searchBar'>
-            <input type='text' value={searchInput} onChange={handleSearchInput} />
-            <button onClick={handleSearch} className='button'>Search</button>
+        <form className='searchBar' onSubmit={handleSearch}>
+            <input type='search' className='input' placeholder='Search' aria-label='search' value={searchInput} onChange={handleSearchInput} />
+            <input type='submit' value='Search' className='button' />
         </form>
     )
 }

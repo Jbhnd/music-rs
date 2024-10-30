@@ -49,9 +49,10 @@ function App() {
   return (
     <>
       <header className='header'>
-        <h1>Music Rs</h1>
+        <span className='music-rs'>Music Rs</span>
       </header>
       <main className='main'>
+        <h1 className='heading-one'>Search, Create, Save Playlist</h1>
         <search>
           <SearchBar onSearch={searchTrack} />
         </search>
