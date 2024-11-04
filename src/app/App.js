@@ -51,16 +51,28 @@ function App() {
       <header className='header'>
         <span className='music-rs'>Music Rs</span>
       </header>
-      <main className='main'>
-        <h1 className='heading-one'>Search, Create, Save Playlist</h1>
-        <search>
-          <SearchBar onSearch={searchTrack} />
-        </search>
-        <section className='results-Playlist'>
-          <SearchResults results={searchResults} onAdd={searchAddHandler} />
-          <Playlist playlistTracks={playlistTracks} onRemove={playlistRemoveHandler} onSave={savePlaylist} />
-        </section>
-      </main>
+      <div className='main-container'>
+        
+        <main className='main'>
+          <h1 className='heading-one'>Search, Create, Save Playlist</h1>
+          <search>
+            <SearchBar onSearch={searchTrack} />
+          </search>
+          <section className='results-playlist'>
+            <div className='music-bars'>
+              <span className='bar'></span>
+              <span className='bar'></span>
+              <span className='bar'></span>
+              <span className='bar'></span>
+              <span className='bar'></span>
+              <span className='bar'></span>
+              <span className='bar'></span>
+            </div>
+            <SearchResults results={searchResults} onAdd={searchAddHandler} />
+            <Playlist playlistTracks={playlistTracks} onRemove={playlistRemoveHandler} onSave={savePlaylist} />
+          </section>
+        </main>
+      </div>
       <footer className='footer'>
         <ul className='footer-list'>
           <li>About</li>
